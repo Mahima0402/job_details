@@ -1,0 +1,259 @@
+<?php
+session_start();
+?>
+
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>home</title>
+         
+        <!--swiper css link-->
+        <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+
+
+        <!--font awesome cdn link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        <!--custom css file link-->
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--header section starts-->
+
+<section class="header">
+    <a href="home.php" class="logo">Job details</a>
+
+<nav class="navbar">
+<a href="home.php">Home</a>
+    <a href="about.php">About</a>
+    <?php
+if (isset($_SESSION['username'])) {
+    echo '<a href="profile.php">' . $_SESSION['username'] . '</a>';
+} else {
+    echo '<a href="login.php">Login</a>';
+}
+?>
+</nav>
+
+<div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+
+<!--header section ends-->
+
+
+<!--home section starts-->
+
+<section class="home">
+
+
+
+<div class="slide" style="background:url(images/job2.jpg) no-repeat">
+    <div class="content" >
+        <h3 style="color:white">Details!</h3>   
+     </div>
+
+</div>
+
+</section>
+
+
+
+<!--home section ends-->
+
+
+
+
+
+
+
+
+
+<section class="home-packages">
+
+<h1 class="heading-title">Categories!</h1>
+
+<div class="box-container">
+
+ <div class="box">
+    <div class="image">
+         <img src="images/job3.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <h3>Based on domain</h3>
+        <a href="tourist.php" class="btn">Know more</a>
+    </div>
+ </div>
+
+ <div class="box">
+    <div class="image">
+         <img src="images/job11.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <h3>Based on city</h3>
+        <a href="tourist2.php" class="btn">Know more</a>
+    </div>
+ </div>
+
+
+<div class="box">
+    <div class="image">
+         <img src="images/career4.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <h3>Career advice</h3>
+        <a href="career.php" class="btn">Read more</a>
+    </div>
+ </div>
+
+
+</div>
+
+</section>
+
+<!--home packages section ends-->
+
+
+
+
+
+
+<!--services section starts-->
+<section class="services">
+<div class="heading-title">
+<h1>Featured companies</h1>
+</div>
+
+<div class="box-container">
+
+<div class="box">
+    <img src="images/featured1.png" alt="">
+    <h3>Google</h3>
+</div>
+
+<div class="box">
+    <img src="images/featured2.png" alt="">
+    <h3>Amazon</h3>
+</div>
+
+<div class="box">
+    <img src="images/featured3.png" alt="">
+    <h3>Oracle</h3>
+</div>
+
+<div class="box">
+    <img src="images/featured4.png" alt="">
+    <h3>Samsung</h3>
+</div>
+
+<div class="box">
+    <img src="images/featured5.jpg" alt="">
+    <h3>Dell</h3>
+</div>
+
+<div class="box">
+    <img src="images/featured6.png" alt="">
+    <h3>Netflix</h3>
+</div>
+
+</div>
+</section>
+
+<!--service section ends-->
+
+
+
+
+
+
+
+
+
+
+<!--home about section starts-->
+
+<section class="home-about">
+
+<div class="image">
+    <img src="images/job1.jpg" alt="">
+</div>
+
+<div class="content">
+    <h3>about</h3>
+    <p>This website helps to explore different domain jobs.Maps can be viewed based on the search and other detials are given for the particular company.</p>
+           <a href="about.php" class="btn" style="color:white">read more</a>
+</div>
+
+
+</section>
+
+
+<!--home about section ends-->
+
+
+
+
+
+
+<!--Footer section starts-->
+
+<section class="footer">
+
+ <div class="box-container">
+    <div class="box">
+        <h3>Quick Links</h3>
+        <a href="home.php"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="about.php"><i class="fas fa-angle-right"></i>About</a>
+        <a href="package.php"><i class="fas fa-angle-right"></i>Package</a>
+        <a href="book.php"><i class="fas fa-angle-right"></i>Book</a>
+        </div>
+
+        <div class="box">
+        <h3>Extra Links</h3>
+        <a href="#"><i class="fas fa-angle-right"></i>ask questions</a>
+        <a href="#"><i class="fas fa-angle-right"></i>about us</a>
+        <a href="#"><i class="fas fa-angle-right"></i>privacy policy</a>
+        <a href="#"><i class="fas fa-angle-right"></i>terms of use</a>
+        </div>
+
+        <div class="box">
+        <h3>Contact</h3>
+        <a href="#"><i class="fas fa-phone"></i> +91 9446-7511235</a>
+        <a href="#"><i class="fas fa-phone"></i> +91 8765-544478</a>
+        <a href="#"><i class="fas fa-envelope"></i> nihongo@gmail.com</a>
+        <a href="#"><i class="fas fa-map"></i> Bangalore, India - 530085</a>
+        </div>
+
+        <div class="box">
+            <h3>Follow</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i> facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+        </div>
+ </div>
+
+ <div class="credit">created by <span>Designer</span> | all rights reserved!</div>
+
+</section>
+
+<!--Footer section ends-->
+
+
+<!--swiper js link-->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+<!--custom js file link-->
+<script src="js/script.js"></script>
+
+</body>
+</html>
